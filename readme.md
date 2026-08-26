@@ -10,5 +10,4 @@ St. Tropez
 St. Moritz
 Monaco
 Tokyo
-Berlin
 Milan
