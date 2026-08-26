@@ -1,4 +1,4 @@
 ola, meu nome eh romeu 
-gosta de churrasco 
+gosto de churrasco 
 FLAKES POWER 
 BATMAN
