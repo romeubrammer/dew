@@ -1,8 +1,33 @@
 h1 {
   color: red;
-  font-size: 50px;
+  font-size: 30px;
   font-family:Geneva;
   font-weight: bold;
   background-color: yellow;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+#primary-list {
+  list-style: none;
+  text-align: center;
+}
+
+img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
 }
 
