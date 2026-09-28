@@ -31,3 +31,37 @@ img {
   margin: 0 auto;
 }
 
+p {
+  font-family:Arial;
+  font-size:12px;
+  font-weight:800px;
+  text-align:center;
+  line-height: 1.5;
+}
+
+.banner {
+  height: 300px;
+  width: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQjOO9w_PbIHJ78q2duGlKTsl_tBi2DwEImj0p6uLj5Fgrv8Du7FjSLk&s=10");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hide {
+  display: none;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+body {
+  padding: 20px;
+  margin: 20px;
+}
+
+a:hover {
+  opacity: 0.5;
+}
