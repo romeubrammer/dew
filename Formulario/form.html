@@ -4,16 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pagina</title>
+
+  <!-- Um link da pagina JavaScript -->
+  <!-- Tag script -->
+  <!-- Atributo SRC apontando para diretorio do arquivo JS -->
   <script src="form.js" defer></script>
+  
+  <!--
+  Atributos da tag script
+  defer: garantir que meu script seja iniciado apos ter sido totalmente baixado
+  async: assim que for baixado o arquivo ele ja vai ser executado
+  -->
 </head>
+
 <body>
+  <!--Criar um formulario para receber 3 valores
+  Valor 1: nome
+  Valor 2: nota 1
+  Valor 3: nota 2
+  Quando clicar no botao calcular:
+  1 realizar o calculo da media
+  2 mostrar o resultado na tela 
+  Nome - media
+  -->
   <H1>Calculadora de Media Academica</H1>
+
+  <!-- Elemento de formulario com id formularioAcademico-->
   <form action="" id="formularioAcademico">
         <h2>Formulario</h2>
+
+        <!-- Campo para capturar o nome-->
         <div>
+            <!--label: legenda de um campo-->
             <label form="nome"> Digite o seu nome </label>
-            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required/>
+
+            <!-- Campo de entrada de dados do tipo texto-->
+            <input 
+            type="text" 
+            id="nome" 
+            name="nome" 
+            placeholder="Digite o seu nome" 
+            required
+            />
+            <!-- Label atributo for e input atributo name tem que ter o mesmo valor-->
         </div>
-  </form>
-</body>
+
+        <!-- Campo para capturar a primeira nota-->
+        <div>
+            <label for="notaUm">Digite a primeira nota</label>
+            <input 
+            type="number" 
+            id="notaUm" 
+            name="notaUm" 
+            min="0" 
+            max="10" 
+            step="0.5" 
+            placeholder="Digite a primeira nota nota" 
+            required
+            />
+        </div>
+
+        <!--Campo para capturar a segunda nota-->
+        <div>
+          <label for="notaUm">Digite a segunda nota</label>
+            <input 
+            type="number" 
+            id="notaDois" 
+            name="notaDois" 
+            min="0" 
+            max="10" 
+            step="0.5" 
+            placeholder="Digite a segunda nota" 
+            required
+            />
+        </div>
+        
+        <!--Botoes de acoes-->
+        <div>
+          <button type="submit" id="btnCalcular">Calcular media</button>
+          <button type="reset" id="btnLimparCampos">Limpar Campos</button>
+        </div>
+        
+        <!--Area de resultados-->
+        <div>
+          <p id="resultados">...</p>
+        </div>
+    </form>
+  </body>
 </html>
